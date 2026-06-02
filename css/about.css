@@ -203,6 +203,7 @@ div.loader-container{
     --content-bg:#F2F2F2;
     --progressbar-bg:#f4f4f4;
     --heading-section-clr:#ededed;
+    --pp-service-border-clr: rgba(157, 157, 255, 0.0509803922);
     --border: #d9dde0;
     --label-border: 2px;
     --loader-size: 78px;
@@ -1073,81 +1074,7 @@ section.skill-bar div.container div.skills div.skill div.progress-bar div span{
    /* Skill Bar Section Style End  */
 
 
-   /* Latest Sevices Section Style Start  */
 
-
-
-
-
-
-   section.price-plan div.container div.row div.pp-info{
-    background-color: var(--content-bg);
-    height: 100%;
-    border-radius: 1.25rem;
-    position: relative;
-   }
-
-
-
-   .pp-info:hover::after{
-    opacity: 1;
-}
-.pp-info:hover::before{
-    opacity: 0;
-}
-
-.pp-info::before, 
-.pp-info::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: inherit;
-    transition: opacity 0.5s;
-
-
-}
-
-
-
-    
-
-
-.pp-info > .pp-info-content{
-    height: calc(100% - 6px);
-    width: calc(100% - 6px);
-    background: var(--content-bg);
-    border-radius: 1rem;
-    margin: 3px 3px 3px 3.5px;
-    z-index: 2;
-    position: relative;
-    padding: 1.9rem;
-}
-
-.pp-info::after{
-    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y) , var(--btn-bg-clr), transparent 40%);
-    z-index: 1;
-    opacity: 0;
-}
-
-
-section.price-plan div.container div.row div.pp-info-wrap{
-    row-gap: 6rem;
-}
-
-section.price-plan div.container div.row div.pp-info-wrap div.pp-info div.pp-info-content h4.pb-3{
-    font-weight: 600;
-    color: var(--header-font-clr);
-}
-
-
-
-
-
-
-   /* Latest Sevices Section Style End  */
 
 
    /* Education & Experience Section Style Start  */
@@ -1265,6 +1192,81 @@ section.EdEx div.container div.row div.ed-info-wrap:nth-child(4){
 
 
 
+
+      /* Price Plan Section Style Start  */
+
+
+section.price-plan{
+    padding: 4rem 0;
+}
+   section.price-plan div.container div.row div.pp-info{
+    background-color: var(--content-bg);
+    height: 100%;
+    border-radius: 1.25rem;
+    position: relative;
+   }
+
+
+
+   .pp-info:hover::after{
+    opacity: 1;
+}
+.pp-info:hover::before{
+    opacity: 0;
+}
+
+.pp-info::before, 
+.pp-info::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    transition: opacity 0.5s;
+
+}   
+
+
+.pp-info > .pp-info-content{
+    height: calc(100% - 6px);
+    width: calc(100% - 6px);
+    background: var(--content-bg);
+    border-radius: 1rem;
+    margin: 3px 3px 3px 3.5px;
+    z-index: 2;
+    position: relative;
+    padding: 1.9rem;
+}
+
+.pp-info::after{
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y) , var(--btn-bg-clr), transparent 40%);
+    z-index: 1;
+    opacity: 0;
+}
+
+
+section.price-plan div.container div.row div.pp-info-wrap{
+    row-gap: 6rem;
+}
+
+div.pp-info-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.pp-info-content ul{
+    border-top: 2px solid var(--pp-service-border-clr);
+}
+.pp-info-content ul li i{
+    color: var(--btn-bg-clr);
+}
+
+
+
+   /* Price Plan Section Style End  */
   
 
    
@@ -1275,7 +1277,7 @@ section.EdEx div.container div.row div.ed-info-wrap:nth-child(4){
 
 
    section.contact-sec{
-    padding: 4rem 0;
+    padding: 4rem 0 6rem;
 
    }
 
@@ -1374,83 +1376,7 @@ div.contact-form form input:focus, div.contact-form form textarea:focus{
    /* Contact Section Style End  */
 
 
-   /* Blog Section Style Start  */
-
-
-   section.blog{
-    padding: 4rem 0 8rem;
-   }
-
-   div.blog-card{
-    border: 2px solid var(--border);
-   }
-
-   div.blog-card:hover div.blog-img img{
-    transform: scale(1.05);
-   }
-
-   div.blog-img{
-    overflow: hidden;
-   }
-   div.blog-img img{
-    transition: all ease 0.5s;
-    overflow: clip;
-   }
-
-   div.tag{
-    background: var(--progressbar-bg);
-    z-index: 2;
-    top: 3%;
-    left: 3%;
-    font-size: 0.9rem;
-    border-radius: 25px;
-    font-weight: 400;
-   }
-
-   div.tag i{
-    font-size: 0.7rem;
-   }
-
-
-   .blog-heading{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--header-font-clr);
-    line-height: 1.9rem;
-    word-break: break-word;
-    display: inline;
-   }
-
-
-
-.black-line {
-  background: linear-gradient(to right, var(--header-font-clr));
-  background-size: 0 0;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-  line-break: auto;
-}
-
-.read-more-btn{
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: var(--description-clr);
-
-}
-
-
-.blog-card:hover .black-line {
-  background-size: 100% 0.1em;
-}
-
-
-   
-
-   
-
-   /* Blog Section Style End  */
-
+  
 
 
    /* Footer Section Style Start  */
@@ -1461,9 +1387,7 @@ div.contact-form form input:focus, div.contact-form form textarea:focus{
     padding: 6rem 0 0;
    }
 
-   footer.container-fluid div.container{
-    padding: 0 0 6rem;
-   }
+
 
 
    footer.container-fluid div.container div.d-flex h2{

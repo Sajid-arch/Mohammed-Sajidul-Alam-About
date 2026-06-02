@@ -64,16 +64,29 @@
    img.footer-logo{
     max-width: 17.5vw;
    }
-
-
-}
-
-
-div.contact-form form{
+   div.contact-form form{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
 }
+
+div.pp-info-content h4{
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+}
+div.pp-info-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.9rem;
+}
+
+
+
+}
+
+
+
 
 
 
@@ -129,6 +142,10 @@ div.contact-form form{
 
       img.footer-logo{
     max-width: 12.5vw;
+   }
+
+    footer.container-fluid div.container{
+    padding: 0 0 4rem;
    }
 
   
@@ -297,6 +314,10 @@ div.contact-form form{
     div.contact-form form button{
         grid-area: 4/1/4/3;
     }
+
+    footer.container-fluid div.container{
+    padding: 0 0 6rem;
+   }
 
 
 }
