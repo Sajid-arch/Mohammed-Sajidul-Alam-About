@@ -247,7 +247,7 @@ function startAnimation(bar) {
 // For Skills Counting Effect End
 
 
-// For Latest Services Info Box Start
+// For Price Plan Info Box Start
 
 
 const handleOnMouseMoveLs = e => {
@@ -273,7 +273,7 @@ const handleOnMouseMoveLs = e => {
 
 
 
-// For Latest Services Info Box End
+// For Price Plan Info Box End
 
 
 
