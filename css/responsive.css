@@ -174,10 +174,6 @@ div.pp-info-content h2{
 
 
 
-    section.hero{
-        padding: 15vh 0 2rem;
-    }
-
     
 
     .btn-1{
@@ -209,26 +205,9 @@ div.pp-info-content h2{
 
 @media (min-width:980px) {
 
-
-
-
-    section.hero{
-        padding: 15vh 0 2rem;
-    }
-
-   
-       img.footer-logo{
+    img.footer-logo{
     max-width: 8vw;
    }
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -256,7 +235,7 @@ div.pp-info-content h2{
     }
 
     header div.container div.labels label i {
-            font-size: 1.6rem;
+        font-size: 1.6rem;
     }
 
 
@@ -329,13 +308,7 @@ div.pp-info-content h2{
     .r-heading-1{
         font-size: 3.5rem;
     }
- 
-    section.hero{
-        padding: 5vh 0 4rem;
-    }
 
-
- 
 
 
     section.skill-bar div.container div.row div.ex-num-wrap div.ex-num span{
@@ -382,14 +355,7 @@ div.pp-info-content h2{
     }
 
 
-    section.hero{
-        max-height: 120vh;
-        padding: 15vh 0 4rem;
-    }
-
-
-
-   
+  
 
 
     .btn-1{
