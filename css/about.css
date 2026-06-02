@@ -341,12 +341,17 @@ header div.container div.labels label{
 header div.container div.labels label::after{
     content: "";
     position: absolute;
-    inset: calc(var(--label-border) * -1);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     background: var(--btn-bg-clr);
     z-index: 2;
     transition: all ease 0.5s;
     transform: scale(1);
     border-radius: 50%;
+    height: 101%;
+    width: 101%;
 }
 header div.container div.labels label i{
     color: var(--text-clr);
