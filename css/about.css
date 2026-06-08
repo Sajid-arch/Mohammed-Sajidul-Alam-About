@@ -15,6 +15,7 @@
     html, body {
     overflow-x: clip;
     position: relative;
+    background: var(--text-clr);
 }
 
 body {
@@ -232,7 +233,7 @@ div.loader-container{
     --description-clr:rgb(162, 154, 143);
     --invisible: rgba(0,0,0,0);
     --transparent-bg-clr:rgba(0,0,0,0.05);
-    --content-bg:rgb(13, 13, 13);
+    --content-bg:rgb(20, 20, 20);
     --progressbar-bg:rgb(11, 11, 11);
     --border: rgb(38, 34, 31);
     --heading-section-clr:rgb(18, 18, 18);
@@ -523,7 +524,7 @@ div.something:hover::after{
    }
 
    section.skill-bar div.container div.row div.ex-num-wrap{
-    background-color: var(--transparent-bg-clr);
+    background: var(--gradient-text);
     padding: 1rem 3.25rem 2.75rem;
     border-radius: 1.25rem;
     height: 100%;
@@ -756,6 +757,17 @@ section.skill-bar div.container div.skills div.skill div.progress-bar div span{
 
 }
 
+   section.EdEx div.container p{
+    color: var(--description-clr);
+   }
+
+   section.EdEx div.container h2.pb-4{
+    font-size:2.5rem;
+    font-weight: 600;
+    color: var(--header-font-clr);
+
+}
+
 section.EdEx div.container div.row div.ed-info{
     background-color: var(--content-bg);
     height: 100%;
@@ -804,6 +816,14 @@ section.EdEx div.container div.row div.ed-info{
     z-index: 2;
     position: relative;
     padding: 1.9rem;
+}
+div.ed-info-content h4.pb-3{
+    font-weight: 600;
+    color: var(--header-font-clr);
+}
+div.ed-info-content h5{
+    font-weight: 600;
+    color: var(--header-font-clr);
 }
 
 .ed-info::after{
@@ -911,6 +931,10 @@ div.pp-info-content p{
 
 .pp-info-content ul{
     border-top: 2px solid var(--pp-service-border-clr);
+}
+
+.pp-info-content ul li{
+    color: var(--header-font-clr);
 }
 .pp-info-content ul li i{
     color: var(--btn-bg-clr);
