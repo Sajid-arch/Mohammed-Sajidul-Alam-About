@@ -203,6 +203,7 @@ div.loader-container{
     --content-bg:#F2F2F2;
     --progressbar-bg:#f4f4f4;
     --border: #d9dde0;
+    --heading-section-clr:rgb(237, 237, 237);
     --icon-dark-clr:rgba(20,20,20);
     --icon-light-clr:rgba(255,255,255);
     --bg-image: url("../Images/Background.png");
@@ -234,6 +235,7 @@ div.loader-container{
     --content-bg:rgb(13, 13, 13);
     --progressbar-bg:rgb(11, 11, 11);
     --border: rgb(38, 34, 31);
+    --heading-section-clr:rgb(18, 18, 18);
     --icon-dark-clr:rgba(255,255,255);
     --icon-light-clr:rgba(255,255,255);
     --bg-image: url("../Images/Background-Dark.png");
@@ -245,6 +247,7 @@ div.loader-container{
     --theme-btn-bg:#e7e7e7;
     transition: all ease 1s;
 }
+
 
 
 /* Basic Style End */
