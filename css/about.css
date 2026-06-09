@@ -192,6 +192,7 @@ div.loader-container{
     --btn-bg-clr: rgba(255, 0, 0);
     --btn-bg-light-clr: rgba(255, 0, 0, 0.1);
     --hero-bg-clr: rgba(43, 16, 22);
+    --project-sum-bdr:rgb(254, 220, 222);
     --about-bg-clr:rgb(67, 20, 23);
     --box-shadow-clr: rgba(0, 0, 0, 0.5);
     --heading-clr:rgba(237, 228, 228, 1);
@@ -224,6 +225,7 @@ div.loader-container{
     --btn-bg-clr: rgba(255, 0, 0);
     --btn-bg-light-clr: rgba(255, 0, 0, 0.25);
     --hero-bg-clr: rgba(212, 239, 233);
+    --project-sum-bdr:rgb(56, 65, 61);
     --about-bg-clr:rgb(188, 235, 232);
     --box-shadow-clr: rgba(255, 255, 255, 0.5);
     --heading-clr:rgba(18, 27, 27, 1);
@@ -273,6 +275,7 @@ section.heading {
     div.heading-links a{
         font-size: 1rem;
         color: var(--description-clr);
+        transition: all ease 0.5s;
     }
     div.heading-links i{
         font-size: 1rem;
@@ -376,7 +379,7 @@ section.project-sum div.container div.row div.project-sum-wrapper{
 
 
 section.project-sum div.container div.row div.project-sum-wrapper div.project-sum-card{
-    border: 1px solid #FEDCDE;
+    border: 1px solid var(--project-sum-bdr);
     padding: 2.25rem 1rem;
     border-radius: 25px;
 }
@@ -923,6 +926,19 @@ section.price-plan div.container div.row div.pp-info-wrap{
     row-gap: 6rem;
 }
 
+div.pp-info-content h4{
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    color: var(--header-font-clr);
+}
+div.pp-info-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.9rem;
+    color: var(--header-font-clr);
+}
+
 div.pp-info-content p{
     font-size: 1rem;
     font-weight: 400;
@@ -1046,7 +1062,17 @@ div.contact-form form input:focus, div.contact-form form textarea:focus{
     border: 2px solid var(--btn-bg-clr);
 }
 
-
+/* Override browser autofill styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    /* Changes the text color to white to match your theme */
+    -webkit-text-fill-color: var(--header-font-clr);
+    
+    /* Makes the background transparent by delaying the browser's color change indefinitely */
+    transition: background-color 9876543210s ease-in-out 0s;
+}
 
 
    /* Contact Section Style End  */

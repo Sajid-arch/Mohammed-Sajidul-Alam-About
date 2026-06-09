@@ -250,7 +250,7 @@ function startAnimation(bar) {
 // For Price Plan Info Box Start
 
 
-const handleOnMouseMoveLs = e => {
+const handleOnMouseMovePP = e => {
     const { currentTarget: target } = e;
 
 
@@ -267,7 +267,7 @@ const handleOnMouseMoveLs = e => {
 
 
     for(const Price of document.querySelectorAll(".pp-info")) {
-        Price.onmousemove = e => handleOnMouseMoveLs(e);
+        Price.onmousemove = e => handleOnMouseMovePP(e);
     }
 
 
