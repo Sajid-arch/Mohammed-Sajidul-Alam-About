@@ -133,8 +133,8 @@ div.sidebar div.menu div.tab-border a{
     font-size: 1.2rem;
 }
 
-div.sidebar div.ci a{
-    width: 2.5rem;
+div.sidebar div.ci a.ci-bg{
+    min-width: 2.5rem;
     height: 2.5rem;
     background: var(--transparent);
     transition: all ease 0.5s;
@@ -143,7 +143,7 @@ div.sidebar div.ci a{
     overflow: hidden;
     transition: all ease 0.5s;
 }
-div.sidebar div.ci a::after{
+div.sidebar div.ci a.ci-bg::after{
     content: "";
     position: absolute;
     top: 100%;
@@ -159,12 +159,12 @@ div.sidebar h4.fmw{
     color: var(--header-font-clr);
 }
 
-div.sidebar div.ci a i{
+div.sidebar div.ci a.ci-bg i{
     color: var(--header-font-clr);
     font-size: 1.5rem;
     z-index: 3;
 }
-div.sidebar div.ci:hover a::after{
+div.sidebar div.ci:hover a.ci-bg::after{
     top: 0;
 }
 div.sidebar div.ci:hover i{
@@ -174,6 +174,9 @@ div.sidebar div.ci-text h4{
     font-size: 1.2rem;
     color: var(--header-font-clr);
     font-weight: 500;
+}
+div.sidebar div.ci-text h4 a{
+    color: var(--header-font-clr);
 }
 
 
