@@ -260,9 +260,9 @@ div.loader-container{
 
 
 section.heading {
-    background: var(--heading-section-clr);
-    
+    background: var(--heading-section-clr);   
 }
+
 
 
     section.heading h2{
