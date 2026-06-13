@@ -1093,17 +1093,6 @@ div.contact-form form input:focus, div.contact-form form textarea:focus{
     border: 2px solid var(--btn-bg-clr);
 }
 
-/* Override browser autofill styles */
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active {
-    /* Changes the text color to white to match your theme */
-    -webkit-text-fill-color: var(--header-font-clr);
-    
-    /* Makes the background transparent by delaying the browser's color change indefinitely */
-    transition: background-color 9876543210s ease-in-out 0s;
-}
 
 
    /* Contact Section Style End  */
